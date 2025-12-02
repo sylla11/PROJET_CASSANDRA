@@ -1,3 +1,55 @@
+
+#################################################################
+# CUSTOM RULES FOR PROJET_CASSANDRA
+#################################################################
+
+# --- DATASETS ---
+2_DATASET/
+*.csv
+*.zip
+*.parquet
+
+# --- CASSANDRA CLUSTERS ---
+3_CLUSTERS/
+*.db
+*.crc32
+*.meta
+*.txt
+*.log
+*Cache.db
+*Filter.db
+*Index.db
+*Statistics.db
+*Summary.db
+*TOC.txt
+
+# --- DOCKER ---
+docker-compose.yml
+docker-data/
+**/data/
+**/logs/
+
+# --- SPARK JARS ---
+*.jar
+spark-warehouse/
+derby.log
+
+# --- NOTEBOOK CHECKPOINTS ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- ENVIRONNEMENTS ---
+.env
+.env.local
+env/
+venv/
+.venv/
+
+#################################################################
+# END OF CUSTOM RULES
+#################################################################
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

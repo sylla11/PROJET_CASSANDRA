@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paysim-sdk"
+version = "0.1.0"
+description = "SDK client pour l'API PaySim (Cassandra + FastAPI)"
+readme = "paysim_sdk/README.md"
+requires-python = ">=3.9"
+authors = [
+    { name="Oumarou Sylla", email="your-email@example.com" }
+]
+keywords = ["paysim", "cassandra", "fastapi", "sdk", "client"]
+license = {text = "MIT"}
+
+dependencies = [
+    "requests>=2.31.0",
+    "urllib3>=2.0.0"
+]
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://example.com/docs"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["paysim_sdk*"]
+exclude = ["tests*"]
